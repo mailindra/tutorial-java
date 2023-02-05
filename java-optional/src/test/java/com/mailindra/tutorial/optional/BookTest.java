@@ -22,10 +22,10 @@ class BookTest {
 
     @Test
     void givenOptional_checkConditionNullBook_success(){
-        Optional<Book> bookOptional = Optional.empty();
+        Optional<Book> bookOptional = Book.createEmptyOptionalBook();
         bookOptional.ifPresentOrElse(
                 System.out::println,
-                () -> System.out.println("Book is not exit"));
+                () -> System.out.println("Book is not exist"));
 
         }
 
