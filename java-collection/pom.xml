@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.mailindra.tutorial</groupId>
     <artifactId>javaCollection</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -31,6 +30,12 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
+
 
         </plugins>
     </build>
@@ -61,14 +66,15 @@
     </dependencyManagement>
 
     <properties>
-    <maven.compiler.source.version>19</maven.compiler.source.version>
-    <maven.compiler.target.version>19</maven.compiler.target.version>
-    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-    <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
-    <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
-    <junit-platform.version>1.8.1</junit-platform.version>
-    <junit-jupiter.version>5.8.1</junit-jupiter.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source.version>19</maven.compiler.source.version>
+        <maven.compiler.target.version>19</maven.compiler.target.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
+        <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+        <junit-platform.version>1.8.1</junit-platform.version>
+        <junit-jupiter.version>5.8.1</junit-jupiter.version>
     </properties>
 
 
